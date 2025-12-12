@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { SOURCES } from '../../constants';
-import { SourceDetail } from '../SourceDetail';
-import { SummaryDashboard } from '../SummaryDashboard';
+import { SOURCES } from './constants';
+import { SourceDetail } from './SourceDetail';
+import { SummaryDashboard } from './SummaryDashboard';
 import { ArrowLeft, ZoomIn } from 'lucide-react';
 
 export const SourcesSlide: React.FC = () => {
@@ -35,7 +35,6 @@ export const SourcesSlide: React.FC = () => {
               <p className="text-slate-400">Ecosistema de datos para validación, estructura y dinámica de mercado.</p>
             </div>
 
-            {/* Grid of Summary Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-8">
               {SOURCES.map((source: any, index: number) => {
                 const Icon = source.icon;
@@ -70,8 +69,7 @@ export const SourcesSlide: React.FC = () => {
               })}
             </div>
             
-            {/* Embedded Summary Dashboard */}
-             <div className="mt-8 pt-8 border-t border-slate-800">
+            <div className="mt-8 pt-8 border-t border-slate-800">
                <SummaryDashboard />
              </div>
 
