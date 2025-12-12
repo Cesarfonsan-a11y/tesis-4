@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PRESENTATION_CONTENT } from '../../constants';
+import { PRESENTATION_CONTENT } from './constants';
 import { Target, CheckCircle2 } from 'lucide-react';
 
 export const ObjectivesSlide: React.FC = () => {
