@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PRESENTATION_CONTENT } from '../../constants';
+import { PRESENTATION_CONTENT } from './constants';
 import { ExternalLink } from 'lucide-react';
 
 export const CoverSlide: React.FC = () => {
@@ -32,8 +32,6 @@ export const CoverSlide: React.FC = () => {
         className="mb-12 relative"
       >
         <div className="absolute inset-0 bg-cyan-400/20 blur-3xl rounded-full -z-10" />
-        
-        {/* Title OKTO removed as requested */}
         
         <div className="h-1 w-32 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full mb-8" />
         
